@@ -77,7 +77,7 @@ export const OperatorList = ({ sdk, channel }: Props): ReactElement => {
             user={operator}
             currentUser={sdk.currentUser.userId}
             action={({ actionRef, parentRef }) => {
-              return (
+              return true? (<></>) :(
                 <ContextMenu
                   menuTrigger={(toggleDropdown) => (
                     <IconButton

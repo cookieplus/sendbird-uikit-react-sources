@@ -153,29 +153,31 @@ function ChannelList(props) {
       disableUserProfile={userDefinedDisableUserProfile}
       renderUserProfile={userDefinedRenderProfile}
     >
-      <div className="sendbird-channel-list__header">
-        <ChannelHeader
-          renderHeader={renderHeader}
-          user={user}
-          onEdit={() => {
-            if (enableEditProfile) {
-              setShowProfileEdit(true);
-            }
-          }}
-          allowProfileEdit={enableEditProfile}
-          iconButton={(
-            <AddChannel
-              disabled={!isOnline}
-              userListQuery={userListQuery}
-              sdk={sdk}
-              channelListDispatcher={channelListDispatcher}
-              userId={userId}
-              userFilledApplicationUserListQuery={userFilledApplicationUserListQuery}
-              onBeforeCreateChannel={onBeforeCreateChannel}
-            />
-          )}
-        />
-      </div>
+      { false && (
+        <div className="sendbird-channel-list__header">
+          <ChannelHeader
+            renderHeader={renderHeader}
+            user={user}
+            onEdit={() => {
+              if (enableEditProfile) {
+                setShowProfileEdit(true);
+              }
+            }}
+            allowProfileEdit={enableEditProfile}
+            iconButton={(
+              <AddChannel
+                disabled={!isOnline}
+                userListQuery={userListQuery}
+                sdk={sdk}
+                channelListDispatcher={channelListDispatcher}
+                userId={userId}
+                userFilledApplicationUserListQuery={userFilledApplicationUserListQuery}
+                onBeforeCreateChannel={onBeforeCreateChannel}
+              />
+              )}
+          />
+        </div>
+      )}
       {
         showProfileEdit && (
           <EditUserProfile
@@ -294,7 +296,7 @@ function ChannelList(props) {
                       theme={theme}
                       isActive={channel.url === currentChannel}
                       // todo - potential performance hit refactor
-                      ChannelAction={(
+                      ChannelAction={ false && (
                         <ChannelPreviewAction
                           disabled={!isOnline}
                           onLeaveChannel={() => onLeaveChannel(channel)}

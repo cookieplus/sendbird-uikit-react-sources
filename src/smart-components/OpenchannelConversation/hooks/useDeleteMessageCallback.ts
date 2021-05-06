@@ -33,6 +33,7 @@ function useDeleteMessageCallback(
         callback();
       }
     } else {
+      // @ts-ignore
       currentOpenChannel.deleteMessage(message, (error) => {
         logger.info('OpenChannel | useDeleteMessageCallback: Deleting message on server', sendingStatus);
         if (callback) {

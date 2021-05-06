@@ -49,22 +49,24 @@ const ChannelProfile = (props) => {
         >
           {getChannelName()}
         </Label>
-        <TextButton
-          disabled={disabled}
-          className="sendbird-channel-profile__edit"
-          onClick={() => {
-            if (disabled) { return; }
-            setShowModal(true);
-          }}
-          notUnderline
-        >
-          <Label
-            type={LabelTypography.BUTTON_1}
-            color={disabled ? LabelColors.ONBACKGROUND_2 : LabelColors.PRIMARY}
+        { false && (
+          <TextButton
+            disabled={disabled}
+            className="sendbird-channel-profile__edit"
+            onClick={() => {
+              if (disabled) { return; }
+              setShowModal(true);
+            }}
+            notUnderline
           >
-            {stringSet.CHANNEL_SETTING__PROFILE__EDIT}
-          </Label>
-        </TextButton>
+            <Label
+              type={LabelTypography.BUTTON_1}
+              color={disabled ? LabelColors.ONBACKGROUND_2 : LabelColors.PRIMARY}
+            >
+              {stringSet.CHANNEL_SETTING__PROFILE__EDIT}
+            </Label>
+          </TextButton>
+        ) }
         {
           showModal && (
             <EditDetailsModal

@@ -138,20 +138,24 @@ const MembersAccordion = ({
             />
           )
         }
-        <Button
-          className="sendbird-members-accordion__footer__invite-users"
-          type={ButtonTypes.SECONDARY}
-          size={ButtonSizes.SMALL}
-          disabled={disabled}
-          onClick={() => {
-            if (disabled) { return; }
-            setShowAddUserModal(true);
-          }}
-        >
-          {stringSet.CHANNEL_SETTING__MEMBERS__INVITE_MEMBER}
-        </Button>
         {
-          showAddUserModal && (
+          false && (
+            <Button
+              className="sendbird-members-accordion__footer__invite-users"
+              type={ButtonTypes.SECONDARY}
+              size={ButtonSizes.SMALL}
+              disabled={disabled}
+              onClick={() => {
+                if (disabled) { return; }
+                setShowAddUserModal(true);
+              }}
+            >
+              {stringSet.CHANNEL_SETTING__MEMBERS__INVITE_MEMBER}
+            </Button>
+          )
+        }
+        {
+          false && showAddUserModal && (
             <InviteMembers
               swapParams={swapParams}
               titleText={stringSet.MODAL__INVITE_MEMBER__TITLE}

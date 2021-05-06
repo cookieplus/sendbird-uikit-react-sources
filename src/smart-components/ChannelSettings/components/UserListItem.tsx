@@ -63,7 +63,7 @@ const UserListItem = ({
         menuTrigger={(toggleDropdown) => (
           <Avatar
             onClick={() => {
-              if (!disableUserProfile) {
+              if (false && !disableUserProfile) {
                 toggleDropdown();
               }
             }}

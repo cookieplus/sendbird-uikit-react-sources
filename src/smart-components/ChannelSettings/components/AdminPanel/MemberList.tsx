@@ -106,23 +106,27 @@ export const MemberList = ({
                         closeDropdown={closeDropdown}
                         openLeft
                       >
-                        <MenuItem
-                          onClick={() => {
-                            if ((member.role !== 'operator')) {
-                              channel.addOperators([member.userId], () => {
-                                refershList();
-                                closeDropdown();
-                              });
-                            } else {
-                              channel.removeOperators([member.userId], () => {
-                                refershList();
-                                closeDropdown();
-                              });
-                            }
-                          }}
-                        >
-                          {member.role !== 'operator' ? 'Promote to operator' : 'Demote operator'}
-                        </MenuItem>
+                        {
+                          false && (
+                            <MenuItem
+                              onClick={() => {
+                                if ((member.role !== 'operator')) {
+                                  channel.addOperators([member.userId], () => {
+                                    refershList();
+                                    closeDropdown();
+                                  });
+                                } else {
+                                  channel.removeOperators([member.userId], () => {
+                                    refershList();
+                                    closeDropdown();
+                                  });
+                                }
+                              }}
+                            >
+                              {member.role !== 'operator' ? 'Promote to operator' : 'Demote operator'}
+                            </MenuItem>
+                          )
+                        }
                         {
                           // No muted members in broadcast channel
                           !channel.isBroadcast && (
@@ -178,13 +182,17 @@ export const MemberList = ({
             </Button>
           )
         }
-        <Button
-          type={ButtonTypes.SECONDARY}
-          size={ButtonSizes.SMALL}
-          onClick={() => setShowInviteMembers(true)}
-        >
-          Invite members
-        </Button>
+        {
+          false && (
+            <Button
+              type={ButtonTypes.SECONDARY}
+              size={ButtonSizes.SMALL}
+              onClick={() => setShowInviteMembers(true)}
+            >
+              Invite members
+            </Button>
+          )
+        }
       </div>
       {
         showAllMembers && (

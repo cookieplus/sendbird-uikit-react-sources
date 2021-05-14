@@ -29,7 +29,8 @@ const UserListItem = ({ member = {}, currentUser = '' }) => {
           menuTrigger={(toggleDropdown) => (
             <Avatar
               onClick={() => {
-                if (!disableUserProfile) {
+                // console.log('src/smart-components/ChannelSettings/components/MembersAccordion.jsx');
+                if (false && !disableUserProfile) {
                   toggleDropdown();
                 }
               }}

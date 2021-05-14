@@ -1,7 +1,7 @@
 {
-  "name": "sendbird-uikit",
+  "name": "sendbird-uikit-srs",
   "version": "2.2.1",
-  "description": "React based UI kit for sendbird",
+  "description": "A customized version of React based UI kit for sendbird",
   "main": "dist/cjs/index.js",
   "module": "index.js",
   "typings": "index.d.js",
@@ -22,9 +22,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sendbird/SendBird-UIKIT-JavaScript"
+    "url": "https://github.com/cookieplus/sendbird-uikit-react-sources/"
   },
-  "author": "SendBird <support@sendbird.com>",
+  "author": "dangkienthanh@gmail.com",
   "license": "SEE LICENSE IN LICENSE.md",
   "peerDependencies": {
     "prop-types": "^15.7.2",
@@ -35,9 +35,9 @@
     "sendbird": "^3.0.140"
   },
   "bugs": {
-    "url": "https://github.com/sendbird/uikit-js/issues"
+    "url": "https://github.com/cookieplus/sendbird-uikit-react-sources/"
   },
-  "homepage": "https://sendbird.com",
+  "homepage": "https://github.com/cookieplus/sendbird-uikit-react-sources",
   "devDependencies": {
     "@babel/core": "^7.8.4",
     "@babel/plugin-proposal-class-properties": "^7.8.3",

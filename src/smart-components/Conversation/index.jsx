@@ -286,22 +286,22 @@ export const ConversationPanel = (props) => {
       disableUserProfile={userDefinedDisableUserProfile}
       renderUserProfile={userDefinedRenderProfile}
     >
-      {
-        renderChatHeader
-          ? renderChatHeader({ channel: currentGroupChannel, user })
-          : (
-            <ChatHeader
-              theme={theme}
-              currentGroupChannel={currentGroupChannel}
-              currentUser={user}
-              showSearchIcon={showSearchIcon}
-              onSearchClick={onSearchClick}
-              onActionClick={onChatHeaderActionClick}
-              subTitle={currentGroupChannel.members && currentGroupChannel.members.length !== 2}
-              isMuted={false}
-            />
-          )
-      }
+      {/*{*/}
+      {/*  renderChatHeader*/}
+      {/*    ? renderChatHeader({ channel: currentGroupChannel, user })*/}
+      {/*    : (*/}
+      {/*      <ChatHeader*/}
+      {/*        theme={theme}*/}
+      {/*        currentGroupChannel={currentGroupChannel}*/}
+      {/*        currentUser={user}*/}
+      {/*        showSearchIcon={showSearchIcon}*/}
+      {/*        onSearchClick={onSearchClick}*/}
+      {/*        onActionClick={onChatHeaderActionClick}*/}
+      {/*        subTitle={currentGroupChannel.members && currentGroupChannel.members.length !== 2}*/}
+      {/*        isMuted={false}*/}
+      {/*      />*/}
+      {/*    )*/}
+      {/*}*/}
       {
         isFrozen && (
           <FrozenNotification />

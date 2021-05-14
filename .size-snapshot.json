@@ -62,16 +62,16 @@
     "gzipped": 280
   },
   "ChannelList.js": {
-    "bundled": 49547,
-    "minified": 28340,
-    "gzipped": 7009,
+    "bundled": 50073,
+    "minified": 28539,
+    "gzipped": 7069,
     "treeshaked": {
       "rollup": {
-        "code": 23014,
+        "code": 23213,
         "import_statements": 866
       },
       "webpack": {
-        "code": 25617
+        "code": 25816
       }
     }
   },
@@ -104,16 +104,16 @@
     }
   },
   "ChannelSettings.js": {
-    "bundled": 66122,
-    "minified": 34296,
-    "gzipped": 6319,
+    "bundled": 66068,
+    "minified": 34235,
+    "gzipped": 6307,
     "treeshaked": {
       "rollup": {
-        "code": 28579,
+        "code": 28518,
         "import_statements": 731
       },
       "webpack": {
-        "code": 32160
+        "code": 32099
       }
     }
   },
@@ -252,16 +252,16 @@
     "gzipped": 682
   },
   "OpenChannelSettings.js": {
-    "bundled": 23942,
-    "minified": 13873,
-    "gzipped": 3553,
+    "bundled": 23805,
+    "minified": 13835,
+    "gzipped": 3546,
     "treeshaked": {
       "rollup": {
-        "code": 11588,
-        "import_statements": 649
+        "code": 11545,
+        "import_statements": 644
       },
       "webpack": {
-        "code": 13584
+        "code": 13546
       }
     }
   },
@@ -285,16 +285,16 @@
     "gzipped": 21499
   },
   "Channel.js": {
-    "bundled": 220275,
-    "minified": 117369,
-    "gzipped": 21332,
+    "bundled": 219821,
+    "minified": 117128,
+    "gzipped": 21254,
     "treeshaked": {
       "rollup": {
-        "code": 95948,
+        "code": 95720,
         "import_statements": 1049
       },
       "webpack": {
-        "code": 102959
+        "code": 102745
       }
     }
   },

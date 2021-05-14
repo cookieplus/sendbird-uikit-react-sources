@@ -128,6 +128,8 @@ function ChannelList(props) {
     ? sortChannelList(allChannels)
     : allChannels;
 
+  // console.log(sortedChannels);
+
   if (sortedChannels.length !== allChannels.length) {
     const warning = `ChannelList: You have removed/added extra channels on sortChannelList
       this could cause unexpected problems`;

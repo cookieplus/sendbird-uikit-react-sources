@@ -13,9 +13,14 @@ export const getChannelTitle = (channel = {}, currentUserId, stringSet = LabelSt
   // Direct channel user other user's nickname as channel name.
   if(channel.customType === 'direct') {
     // console.log('getChannelTitle', currentUserId,)
-    const member = channel.members.find(({ userId } ) => (userId != currentUserId));
-    // console.log('getChannelTitle', member);
-    return (member.nickname) ? member.nickname : stringSet.NO_NAME
+
+    if (channel.members.length<=1) {
+      return currentUserId
+    } else {
+      const member = channel.members.find(({ userId } ) => (userId != currentUserId));
+      // console.log('getChannelTitle', member);
+      return (member && member.nickname) ? member.nickname : stringSet.NO_NAME
+    }
   }
 
   if (channel.name && channel.name !== 'Group Channel') {

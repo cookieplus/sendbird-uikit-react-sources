@@ -62,16 +62,16 @@
     "gzipped": 280
   },
   "ChannelList.js": {
-    "bundled": 49988,
-    "minified": 28474,
-    "gzipped": 7046,
+    "bundled": 50094,
+    "minified": 28509,
+    "gzipped": 7060,
     "treeshaked": {
       "rollup": {
-        "code": 23148,
+        "code": 23183,
         "import_statements": 866
       },
       "webpack": {
-        "code": 25751
+        "code": 25786
       }
     }
   },
@@ -266,7 +266,7 @@
     }
   },
   "OpenChannel.js": {
-    "bundled": 119409,
+    "bundled": 119405,
     "minified": 60335,
     "gzipped": 11898,
     "treeshaked": {

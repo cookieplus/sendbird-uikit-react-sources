@@ -1,5 +1,5 @@
 {
-  "name": "sendbird-uikit-src",
+  "name": "sendbird-uikit-srs",
   "version": "2.2.3",
   "description": "React based UI kit for sendbird",
   "main": "release/dist/esm/index.js",

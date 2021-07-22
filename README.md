@@ -1,3 +1,6 @@
+Modified by cookieplus.
+Goto release to publish.
+
 # sendbird-uikit-react
 
 > React based UI kit based on sendbird javascript SDK
